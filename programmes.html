@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CROSSROADS</title>
+
+    <link rel="icon" type="image/ico" href="https://instagram.fccj3-1.fna.fbcdn.net/v/t51.2885-19/s150x150/72856212_415377185807032_5851385172586397696_n.jpg?_nc_ht=instagram.fccj3-1.fna.fbcdn.net&_nc_ohc=473I6nuQn1AAX-m6gV3&oh=d726b28a6e30960c8111ba1ad2c4741a&oe=5F7CB68A">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      *{  
+  margin:0;  
+  padding:0;  
+}  
+  
+.container{  padding-top: 20px;  
+  padding-bottom: 20px;}  
+body{  
+  
+background: rgb(255,168,182);
+
+background-color: #000000;
+background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+}  
+  
+/*.background-img{  
+  background-image: url("");  
+height: 400px;  
+  width: 800px;  
+  background-repeat: no-repeat;  
+  background-size: cover;  
+  margin: 5% auto;  
+  padding:20px;  
+  border: 1px solid #2a3cad;  
+  border-radius: 4px;  
+  box-shadow: 0px 0px 5px #2a3cad;  
+  position: relative;  
+}  */
+  
+.content h2{ font-size:19px;}  
+  
+.box{  
+  top: 50%;  
+  left: 50%;  
+  transform: translate(-50%, -50%);  
+  width: 300px;  
+  height: 300px;  
+  background: #111845a6;  
+  box-sizing: border-box;  
+  overflow: hidden;  
+  box-shadow: 0 20px 50px rgb(23, 32, 90);  
+  border: 2px solid #2a3cad;  
+  color: white;  
+  padding: 20px;  
+}  
+  
+.box:before{  
+  content: '';  
+  position:absolute;  
+  top:0;  
+  left:-100%;  
+  width:100%;  
+  height:100%;  
+  background: rgba(255,255,255,0.1);  
+  transition:0.5s;  
+  pointer-events: none;  
+}  
+  
+.box:hover:before{  
+  left:-50%;  
+  transform: skewX(-5deg);  
+}  
+  
+  
+.box .content{  
+  position:absolute;  
+  top:15px;  
+  left:15px;  
+  right:15px;  
+  bottom:15px;  
+  border:1px solid #f0a591;  
+  padding:20px;  
+  text-align:center;  
+  box-shadow: 0 5px 10px rgba(9,0,0,0.5);  
+    
+}  
+  
+.box span{  
+  position: absolute;  
+  top: 0;  
+  left: 0;  
+  width: 100%;  
+  height: 100%;  
+  display: block;  
+  box-sizing: border-box;  
+    
+}  
+  
+.box span:nth-child(1)  
+{  
+  transform:rotate(0deg);  
+}  
+  
+.box span:nth-child(2)  
+{  
+  transform:rotate(90deg);  
+}  
+  
+.box span:nth-child(3)  
+{  
+  transform:rotate(180deg);  
+}  
+  
+.box span:nth-child(4)  
+{  
+  transform:rotate(270deg);  
+}  
+  
+.box span:before  
+{  
+  content: '';  
+  position: absolute;  
+  width:100%;  
+  height: 2px;  
+  background: #50dfdb;  
+  animation: animate 4s linear infinite;  
+}  
+  
+@keyframes animate {  
+  0% {  
+  transform:scaleX(0);  
+  transform-origin: left;  
+  }  
+  50%  
+  {  
+    transform:scaleX(1);  
+  transform-origin: left;  
+  }  
+  50.1%  
+  {  
+    transform:scaleX(1);  
+  transform-origin: right;  
+      
+  }  
+    
+  100%  
+  {  
+    transform:scaleX(0);  
+  transform-origin: right;  
+      
+  }    
+}   
+
+/*crads css */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  min-height: 300px;
+  margin: auto;
+  text-align: center;
+  background: none;
+}
+.box6{background:#000;position:relative}
+.box6:after{background:rgba(0,0,0,.7);position:absolute;top:0;left:-30%;bottom:0;right:70%;transform:skew(20deg) translateX(-75%)}
+.box6:hover:after{transform:skew(20deg) translateX(0)}
+.box6 img{width:100%;height:auto}
+.box6:hover img{opacity:.5}
+.box6 .box-content{padding:20px;text-align:right;position:absolute;top:0;right:0;z-index:1}
+.box6 .icon,.box7 .icon{padding:0;list-style:none}
+.box10 .icon li a,.box11,.box12,.box13,.box14,.box6 .icon li a,.box7,.box7 .icon li a,.box8,.box8 .icon li a{text-align:center}
+.box6 .title{font-size:20px;font-weight:900;color:#fff;margin:0 0 10px;transform:scale(0)}
+.box6:hover .title{transform:scale(1)}
+.box6 .icon li,.box6 .post{opacity:0;transform:translateX(40px);transition:all .35s ease 0s}
+.box6 .post{display:block;font-size:14px;color:#fff;margin-bottom:5px}
+.box6 .icon{display:inline-block;margin:0}
+.box6:hover .icon li,.box6:hover .post{opacity:1;transform:translateX(0)}
+.box6:hover .icon li:first-child{transition-delay:.1s}
+.box6:hover .icon li:nth-child(2){transition-delay:.2s}
+.box6 .icon li a{display:block;width:35px;height:35px;line-height:35px;background:#fff;font-size:18px;color:#605f5f;margin-bottom:5px;transition:all .35s ease}
+.box6 .icon li a:hover{background:#605f5f;color:#fff}
+@media only screen and (max-width:990px){.box6{margin-bottom:30px}
+}
+
+
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+/* footer */
+footer {
+  background: #16222A;
+  background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+  background: linear-gradient(59deg, #3A6073, #16222A);
+  color: white;
+  margin-top:100px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
+/* Footer*/
+.mainfooter{
+  background: none;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+
+    </style>
+</head>
+<body>
+    <header class="text-white container-fluid" style="color: #1F2833; width: 100%;">
+        <div class="row container-fluid">
+            <div class="col-md-6 col-9 p-3 pl-5">
+                <a href="index.html"><img style="width: 100px;" src="IMAGES\unnamed.jpg" alt=""></a>
+            </div>
+            <div class="col-md-6 col-9 p-3 pl-5 my-auto" >
+                <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color">
+                    <a class="navbar-brand pt-3" href="index.html"><h4>CROSSROADS</h4></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+                      aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link ml-auto" href="index.html">BACK</a>
+                        </li>
+
+                        
+                        <!-- <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Dropdown
+                          </a>
+                          <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </li> -->
+                      </ul>
+                      <ul class="navbar-nav ml-auto nav-flex-icons">
+                        <li class="nav-item">
+                          <a href="https://www.linkedin.com/company/crossroadsofficial/" class="nav-link waves-effect waves-light">
+                            <i class="fab fa-linkedin"></i>
+                          </a>
+        
+                        </li>
+                        <li class="nav-item">
+                          <a href="https://www.youtube.com/channel/UCoGHeFY7jE2OB_TJS_87MOA" class="nav-link waves-effect waves-light">
+                            <i class="fab fa-youtube"></i>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.instagram.com/crossroads.official/" class="nav-link waves-effect waves-light">
+                              <i class="fab fa-instagram"></i>
+                            </a>
+                          </li>
+                        <!--<li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user"></i>
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right dropdown-default"
+                            aria-labelledby="navbarDropdownMenuLink-333">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>-->
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                  <!--/.Navbar -->
+            </div>
+        </div>
+    </header>
+
+
+    <section>
+
+
+        <hr class="bg-white">
+
+        <div class="text-white text-center">
+            <h2>PROGRAMMES</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="pt-5 col-md-6 col-12" style="float: left;">
+                    <iframe width="450" height="315" src="https://www.youtube.com/embed//videoseries?list=PLY-ecO2csVHd8R8sg-4vhN2BzZQLxIZO9" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="pt-5 col-md-6 col-12" style="float: left;">
+                    <iframe width="450" height="315" src="https://www.youtube.com/embed//videoseries?list=PLY-ecO2csVHfbpOmWamlb8Mujjdnl1jks" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+            
+
+                <div class="pt-5 col-md-6 col-12" style="float: left;">
+                    <iframe width="450" height="315" src="https://www.youtube.com/embed//videoseries?list=PLY-ecO2csVHfRMEmW_ltccnJcMtSGUKSk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class=" pt-5 col-md-6 col-12" style="float: left;">
+                    <iframe width="450" height="315" src="https://www.youtube.com/embed//videoseries?list=PLY-ecO2csVHdLhAO6TERaMJXP8aqyWVt-" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+
+                <div class="pt-5 col-md-6 col-12" style="float: left;">
+                    <iframe width="450" height="315" src="https://www.youtube.com/embed//videoseries?list=PLY-ecO2csVHeKaBI7lAM1jbIPU8K6fUxY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="pt-5 col-md-12 col-12" style="float: left;">
+                    <h6 >
+                        <a class="text-white" href="https://www.youtube.com/c/Crossroadstalk/videos">For more, Visit our channel : CROSSROADS</a>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    
+
+
+    <footer class="mainfooter" role="contentinfo">
+      <div class="footer-middle">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <!--Column1-->
+            <div class="footer-pad">
+              <h6>For business inquiries: <a href="	talk@packapeer.com">	talk@packapeer.com</a></h6>
+              
+            </div>
+          </div>
+          <div class="col-md-6" style="float: left; padding-left: 300px; padding-bottom: 30px;">
+            <h4>Follow Us</h4>
+                <ul class="social-network social-circle">
+                 <li><a href="#" class="iconYoutube" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+                 <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                 <li><a href="#" class="iconInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                </ul>				
+        </div>
+        </div>
+      <div class="row">
+        <div class="col-md-12 copy">
+          <p class="text-center">&copy; Copyright 2020 - crossroadsofficial.  All rights reserved.</p>
+        </div>
+      </div>
+    
+    
+      </div>
+      </div>
+    </footer>
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>  
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>  
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/d4358824f7.js" crossorigin="anonymous"></script>
+</body>
+</html>
